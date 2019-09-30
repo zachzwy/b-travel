@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500");
+
+$title-font-family: "Archivo Black", sans-serif;
+
+* {
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+.app {
+  .open-page {
+    background-image: url("./assets/bg-map.jpg");
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(60, 60, 60);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    .open-page-nav {
+      width: 100%;
+      height: 50px;
+      background-color: black;
+
+      img {
+        margin: 10px;
+      }
+    }
+
+    .open-page-image {
+      width: 150px;
+      height: 50px;
+      margin-top: 20vh;
+    }
+
+    .open-page-title {
+      max-width: 800px;
+      width: 80%;
+      text-align: center;
+      margin-top: 50px;
+      color: white;
+      font-size: 45px;
+    }
+
+    .open-page-signup {
+      margin-top: 25px;
+      max-width: 800px;
+      width: 80%;
+
+      &-text {
+        width: 70%;
+        height: 35px;
+        padding-left: 10px;
+      }
+
+      &-submit {
+        background-color: rgb(229, 110, 74);
+        color: white;
+        height: 35px;
+        width: 25%;
+        float: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+      }
+    }
+
+    .sign-up-success {
+      margin-top: 50px;
+      font-size: 25px;
+      color: white;
+    }
+  }
+
+  .feature-list {
+    .feature {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      &.is-odd {
+        flex-direction: row-reverse;
+      }
+
+      .feature-black-background {
+        width: 50vw;
+        padding-top: 45%;
+        position: relative;
+        background-color: black;
+
+        .feature-background-image,
+        .feature-image {
+          position: absolute;
+          margin-left: 10%;
+
+          &.image-is-odd {
+            right: 10%;
+          }
+        }
+
+        .feature-background-image {
+          width: 55vw;
+          height: 80%;
+          top: 10%;
+        }
+
+        .feature-image {
+          height: 60%;
+          top: 20%;
+        }
+      }
+
+      .feature-caption-container {
+        position: absolute;
+        width: 30%;
+        right: 5%;
+
+        &.caption-is-odd {
+          left: 5%;
+        }
+
+        .feature-caption-title {
+          font-size: 27px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+
+        .feature-caption-body {
+          font-size: 13.5px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .app {
+    .feature-list {
+      .feature {
+        .feature-caption-container {
+          .feature-caption-title {
+            font-size: 3vw;
+          }
+
+          .feature-caption-body {
+            font-size: 1.5vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-height: 375px) {
+  .app {
+    .open-page {
+      .open-page-image {
+        margin-top: 0;
+      }
+    }
+  }
+}
