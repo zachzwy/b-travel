@@ -160,6 +160,16 @@ $title-font-family: "Archivo Black", sans-serif;
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .app {
+    .open-page {
+      .open-page-image {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
 @media only screen and (max-height: 375px) {
   .app {
     .open-page {
