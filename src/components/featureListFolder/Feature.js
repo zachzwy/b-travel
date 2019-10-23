@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React from "react";
 
 const Feature = ({ feature, isOdd }) => {
   const { captionTitle, captionBody, backgroundImage, featureImage } = feature;
@@ -13,11 +13,12 @@ const Feature = ({ feature, isOdd }) => {
               : "feature-background-image"
           }
           src={backgroundImage}
-          alt="This is feature background image"
+          alt="This is feature background"
         />
         <img
           className={isOdd ? "feature-image image-is-odd" : "feature-image"}
           src={featureImage}
+          alt="This is feature"
         />
       </div>
       <div

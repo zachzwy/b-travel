@@ -11,7 +11,7 @@ const App = () => {
   const initState = useContext(MyContext);
   const [state, dispatch] = useReducer(reducer, initState);
 
-  console.log(state);
+  // console.log(state);
 
   useEffect(() => {
     axios

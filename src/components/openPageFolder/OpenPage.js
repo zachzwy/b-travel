@@ -6,7 +6,7 @@ import MyContext from "../../context";
 
 const OpenPage = () => {
   const { state } = useContext(MyContext);
-  const { signupSuccess } = state;
+  const { signup } = state;
 
   return (
     <div className="open-page">
@@ -23,9 +23,7 @@ const OpenPage = () => {
         Earn 4x on Travel or UsePoints to Pay
       </div>
       <Signup />
-      {signupSuccess[0] && (
-        <div className="sign-up-success">{signupSuccess[1]}</div>
-      )}
+      {signup[0] && <div className="sign-up-success">{signup[1]}</div>}
     </div>
   );
 };

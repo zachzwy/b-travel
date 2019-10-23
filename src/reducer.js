@@ -8,12 +8,12 @@ const reducer = (state, action) => {
     case "SIGNUP_SUCCESS":
       return {
         ...state,
-        signupSuccess: [true, "Sign up successfully"]
+        signup: [true, "Sign up successfully"]
       };
     case "SIGNUP_FAIL":
       return {
         ...state,
-        signupSuccess: [true, action.payload]
+        signup: [true, action.payload]
       };
     default:
       return new Error();
