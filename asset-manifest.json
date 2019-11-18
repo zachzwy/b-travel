@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/b-travel/static/css/main.6dcb867e.chunk.css",
+    "main.js": "/b-travel/static/js/main.b9e13bce.chunk.js",
+    "main.js.map": "/b-travel/static/js/main.b9e13bce.chunk.js.map",
+    "runtime-main.js": "/b-travel/static/js/runtime-main.e57f641a.js",
+    "runtime-main.js.map": "/b-travel/static/js/runtime-main.e57f641a.js.map",
+    "static/js/2.dc7e2edd.chunk.js": "/b-travel/static/js/2.dc7e2edd.chunk.js",
+    "static/js/2.dc7e2edd.chunk.js.map": "/b-travel/static/js/2.dc7e2edd.chunk.js.map",
+    "index.html": "/b-travel/index.html",
+    "precache-manifest.a0446dd7527a2f8fbb400b0e1ab95977.js": "/b-travel/precache-manifest.a0446dd7527a2f8fbb400b0e1ab95977.js",
+    "service-worker.js": "/b-travel/service-worker.js",
+    "static/css/main.6dcb867e.chunk.css.map": "/b-travel/static/css/main.6dcb867e.chunk.css.map",
+    "static/media/style.scss": "/b-travel/static/media/bg-map.2b1e7ebb.jpg",
+    "static/media/brex-logo.svg": "/b-travel/static/media/brex-logo.5e166b2e.svg",
+    "static/media/brex-travel-logo.svg": "/b-travel/static/media/brex-travel-logo.90220690.svg"
+  }
+}
